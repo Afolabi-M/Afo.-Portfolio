@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+         <div>
+          <img src="img/DataAfolabi1.png" alt="" class="logo" />
+         </div>
+          <div>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+          </div>
+          </nav>
+        <div class="header-text">
+          <p>Data Analyst</p>
+          <h1>
+            Hi, I am <span></span><br />
+            Afolabi, an adept Data Analyst!
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/portfolio photo.JPG" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a data analyst dedicated to uncovering insights that lead to impactful decisions. 
+              With a strong background in data collection, analysis, and visualization, I excel at transforming 
+              complex datasets into actionable strategies. My expertise in tools like Python, SQL, and Tableau
+              allows me to deliver precise and meaningful interpretations. I am committed to continuous learning
+              I am committed to continuous learning
+              and staying ahead of industry trends, ensuring that my analyses remain
+              innovative and reliable. My goal is to provide clear, data-driven solutions that
+              optimize processes, identify trends, and enhance the understanding
+              of data's true value across organizations
+            </p>
+            <p>
+              I excel at collaborating with cross-functional teams and utilizing
+              Agile methodologies to ensure projects are delivered on time and within scope.
+              My proficiency in data analysis tools, coupled with a keen eye for detail and
+              a commitment to continuous learning, keeps me updated with
+              the latest industry trends and best practices. Whether it's 
+              analyzing data, optimizing processes, or 
+              solving complex problems, I am dedicated to providing
+              high-quality insights and innovative solutions that align with business
+              objectives.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Ms.Excel</span>
+                </li>
+                <li><span>Power BI</span></li>
+                <li><span>Tableau</span></li>
+                <li><span>SQL</span></li>
+                <li><span>Python</span></li>
+                <li><span>ETL</span></li>
+                <li><span>Git & GitHub</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  Developed an HR dashboard utilizing PowerBI that visualizes
+                  key metrics such as employee turnover, average time to hire, and employee satisfaction score
+                  integrating data from HRIS and performance reviews to enhance decision-making and track trends effectively
+                </li>
+                <li>
+                  Was part of data teams in different phases of the
+                  program, worked with my team mates and ensured everyone
+                  participated in the tasks handed out to us.
+                </li>
+                <li>
+                  Worked with a team of other Data analysts, engineers and FullStack developers to
+                  maintain the applications and platforms where the data data is 
+                  presented and interacted with.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2014 - 2017</span><br /> National Diploma In Accounting/Accountancy
+                  <br />Yaba College Of Technology (YCT).
+                </li>
+                <li>
+                  <span>2017 - 2022</span><br />Bachelor of Science (B.Sc.) Degree in Finance
+                  <br />University of Lagos (UNILAG).
+                </li>
+                <li>
+                  <span>2022</span><br />Data Analysis
+                  <br />CWW Tech Africa.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Data analysis</h2>
+            <p>
+              I explore, clean, and transform raw data into actionable insights, identifying trends, patterns,
+              and correlations that inform strategic decisions using SQL, Excel, and Python
+              for data manipulation and analysis.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Business Intelligence</h2>
+            <p>
+              I develop and manage dashboards and reports, enabling stakeholders to visualize
+              key metrics and monitor performance
+              in real-time using Power BI for creating
+              interactive and insightful visualizations.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Data-Driven Decision Making</h2>
+            <p>
+              I collaborate with teams to interpret data findings, providing recommendations that
+              guide business strategies, optimize processes, and improve outcomes.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/HR3.jpg" alt="" />
+            <div class="layer">
+              <h3>HR Analysis</h3>
+              <p>
+                This report features TABLEAU visualizations of key HR metrics, including performance and turnover.
+                Interactive dashboards provide clear insights into workforce trends and help identify strategic 
+                improvements.
+              </p>
+              <a href="https://public.tableau.com/app/profile/afolabi.mubarak/viz/HRDashboard_17233961618710/HRSummary?publish=yes"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/the-pizza-company.jpg" alt="" />
+            <div class="layer">
+              <h3>Pizza Sales Report</h3>
+              <p>
+                This report combines SQL and POWER BI to analyze pizza sales data. SQL was used for data cleaning 
+                and preparation, while POWER BI provided dynamic visualizations of sales trends, popular items, and 
+                peak times.
+              </p>
+              <a href="https://complete-foodie-client-app.vercel.app/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/Adventure-Bikes-Shop_1.png" alt="" />
+            <div class="layer">
+              <h3>Adventure Works</h3>
+              <p>
+                This report leverages POWER BI to analyze and visualize data for a bike company. It features 
+                interactive dashboards that highlight key metrics For Sales, Products and Customers, 
+                providing valuable insights for strategic decision-making and operational improvements.
+              </p>
+              <a href="put it here when you are ready"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/HR.jpg" alt="" />
+            <div class="layer">
+              <h3>HR Report</h3>
+              <p>
+                Created an application that provides users of any age range with
+                a collection of quotes from renowned authors on any topic, and a
+                platform to share on twitter too.
+              </p>
+              <a href="https://dejj1.github.io/Quotes_app/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/Covid 19.jpg" alt="" />
+            <div class="layer">
+              <h3>Covid'19 Exploration</h3>
+              <p>
+                Developed this website for a user to reach out to prospective
+                clients interested in buying lands or houses.
+              </p>
+              <a href="https://github.com/Afolabi-M/PortfolioProjects/blob/main/COVID%20PortfolioProject%20Actual%20Script%20v2.sql"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/Nashvillle.webp" alt="" />
+            <div class="layer">
+              <h3>Nashville Housing</h3>
+              <p>
+                Developed this website for a building contractor to showcase his
+                work and reach out to prospective clients interested in building
+                houses or any of his other services.
+              </p>
+              <a href="https://github.com/Afolabi-M/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.sql"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> afolabimubaraq@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i>+234 813 307 7550</p>
+            <div class="social-icons">
+              <a href="https://web.facebook.com/olola.afolabi.9"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/afolabiolola/?hl=en"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/mubarak-afolabi-329548182/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/dejj1"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="img/EmmanuelOyelakinResume(1).pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="What project would you like to work on?"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Afolabi. Designed with <i class="fas fa-heart"></i> by
+          Mubarak Afolabi.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzNLlNgt11Xs1HRGVDqFDY7cXuyFGwwzXU_aIqmZMCVw6h3Q9DRfimVUwDWZr1f6S7BkA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            (msg.innerHTML = "Message sent successfully"),
+              setTimeout(function () {
+                msg.innerHTML = "";
+              }, 5000),
+              form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
